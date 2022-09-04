@@ -8,3 +8,23 @@ El presente trabajo aborda el desarrollo de un modelo para establecer las accion
 
 Se entiende por sistema de distribución de energía eléctrica a la disposición adoptada por los elementos del sistema tales cómo conductores, transformadores y protecciones, con el fin de lograr que la energía generada por las centrales eléctricas y transportada a través del sistema de transmisión o inmersa en el sistema de distribución, pueda ser utilizada en los sitios de consumo, o sea la carga (residencial, comercial e industrial). Los transformadores de distribución están conectados por el primario al sistema de Media Tensión y por el secundario a la red de Baja Tensión, llevando la potencia a niveles de utilización para los usuarios conectados. 
 ![Image](docs/figures/sistema_distribucion.png)
+
+# Estructura del repositorio
+
+├── LICENSE  
+├── README.md          <- README para los desarrolladores.  
+├── data  
+│   ├── external       <- Datos desde teceras partes.  
+│   ├── interim        <- Data intermedia que ha sido transformada  
+│   ├── processed      <- Data canonical final lista para los modelos  
+│   └── raw            <- Original e inmutable data.  
+├── docs               <- documentación creada.  
+├── models             <- Resumen de modelos.  
+├── reports            <- Analisi generados como HTML, PDF, LaTeX, etc.  
+│   └── figures        <- Figures generadas para sr usadas en reporting.  
+│
+├── requirements.txt   <- Archivo de requierementos para crear el ambientb de desarollo con `pip freeze > requirements.txt`  
+│
+├── src                <- Codigo fuente para este proyecto.
+│   └── notebooks  <- notebooks de jupyter
+│
