@@ -24,14 +24,14 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 ├── reports            <- Análisis generados como HTML, PDF, LaTeX, etc.  
 │   └── figures        <- Figures generadas para sr usadas en reporting.  
 │
-├── requirements.txt   <- Archivo de requierementos para crear el ambientb de desarollo con `pip freeze > │                        requirements.txt`  
+├── requirements.txt   <- requerimientos.txt para crear el ambiente de desarollo con `pip freeze > │                        requirements.txt`  
 │
 ├── src                <- Codigo fuente para este proyecto.  
 │   └── notebooks  <- notebooks de jupyter  
 │
 
 # Análisis Exploratorio de Datos
-Una preliminar analisis exploratorio de datos puede ser encontrado en:
+Una preliminar análisis exploratorio de datos puede ser encontrado en:
 (https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/1_0_et_exploracion_inicial_datos.ipynb)  
 # Clonar repositorio
 Usando git o otra herramienta de control de versiones, clonar este repositorio desde esta URL:
