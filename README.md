@@ -26,13 +26,12 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 │
 ├── requirements.txt   <- requerimientos.txt para crear el ambiente de desarollo con `pip freeze > │                        requirements.txt`  
 │
-├── src                <- Codigo fuente para este proyecto.  
+├── src                <- Código fuente para este proyecto.  
 │   └── notebooks  <- notebooks de jupyter  
 │
 
 # Análisis Exploratorio de Datos
-Una preliminar análisis exploratorio de datos puede ser encontrado en:
-(https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/1_0_et_exploracion_inicial_datos.ipynb)  
+Una preliminar análisis exploratorio de datos puede ser encontrado [aquí.](src/notebooks/1_0_et_exploracion_inicial_datos.ipynb)  
 # Clonar repositorio
 Usando git o otra herramienta de control de versiones, clonar este repositorio desde esta URL:
 https://github.com/EduardoToledoMIAD/distribucion_potencia.git
