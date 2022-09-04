@@ -23,8 +23,12 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 ├── reports            <- Analisi generados como HTML, PDF, LaTeX, etc.  
 │   └── figures        <- Figures generadas para sr usadas en reporting.  
 │
-├── requirements.txt   <- Archivo de requierementos para crear el ambientb de desarollo con `pip freeze > requirements.txt`  
+├── requirements.txt   <- Archivo de requierementos para crear el ambientb de desarollo con `pip freeze > │                        requirements.txt`  
 │
-├── src                <- Codigo fuente para este proyecto.
-│   └── notebooks  <- notebooks de jupyter
+├── src                <- Codigo fuente para este proyecto.  
+│   └── notebooks  <- notebooks de jupyter  
 │
+
+# Clonar repositorio
+
+https://github.com/EduardoToledoMIAD/distribucion_potencia.git
