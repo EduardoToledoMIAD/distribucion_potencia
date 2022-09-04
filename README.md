@@ -9,6 +9,7 @@ El presente trabajo aborda el desarrollo de un modelo para establecer las accion
 Se entiende por sistema de distribución de energía eléctrica a la disposición adoptada por los elementos del sistema tales cómo conductores, transformadores y protecciones, con el fin de lograr que la energía generada por las centrales eléctricas y transportada a través del sistema de transmisión o inmersa en el sistema de distribución, pueda ser utilizada en los sitios de consumo, o sea la carga (residencial, comercial e industrial). Los transformadores de distribución están conectados por el primario al sistema de Media Tensión y por el secundario a la red de Baja Tensión, llevando la potencia a niveles de utilización para los usuarios conectados. 
 ![Image](docs/figures/sistema_distribucion.png)
 
+
 # Estructura del repositorio
 
 ├── LICENSE  
@@ -29,6 +30,9 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 │   └── notebooks  <- notebooks de jupyter  
 │
 
+# Análisis Exploratorio de Datos
+Una preliminar analisis exploratorio de datos puede ser encontrado en:
+(https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/1_0_et_exploracion_inicial_datos.ipynb)  
 # Clonar repositorio
 
 https://github.com/EduardoToledoMIAD/distribucion_potencia.git
