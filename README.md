@@ -35,13 +35,14 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 ### Iteracion 0:
 Una preliminar análisis exploratorio de datos puede ser encontrado [aquí.](src/notebooks/1_0_exploracion_inicial_datos_Iteracion_0.ipynb)  
 ### Iteracion 1: 
-Un nuevo dataset fue suministrado con datos de campo corregidos repecto a las podas [Ver](src/data/raw/dataset_pfinal_ANS_Iteracion_1.xlsx) 
+Un nuevo dataset fue suministrado con datos de campo corregidos repecto a las podas [Ver](https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/data/raw/dataset_pfinal_ANS_Iteracion_1.xlsx) 
 
 - Con estas nuevos ajustes del dataset orgnal, se hizo  de nuevo exploracion de datos cuyas figuras se encuentra en (src/data/docs/figures/Iteracion_1)
--En esta iteracion se corrio PCA con el anim de ver si la reduccion de dimensionalidad nos proporciona una reduccion significativa. Al 95% de varianza explicada solamente se reduce el 50% de dimensionalidad. Creeque que esta reduccion no es suficiente y se decide continuar sin PCA. En el repositorio se puede encontrar las figuras resultantes de Varianza explicada en el folder docs/figures 
+-En esta iteracion se corrio PCA con el animo de ver si la reduccion de dimensionalidad nos proporciona una reduccion significativa. Al 95% de varianza explicada solamente se reduce el 50% de dimensionalidad. Creeque que esta reduccion no es suficiente y se decide continuar sin PCA. En el repositorio se puede encontrar las figuras resultantes de Varianza explicada en el folder docs/figures 
 
-- En esta Iteracion se corre Clustering jerarquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebsk resultantes se identifcan con el posfijo Iteracion_1. Igualmente las figuras de Varianza Intracluster e Indices de Silloutte se pueden encontrar en el folder  docs/figures 
+- En esta Iteracion se corre Clustering jerarquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se identifcan con el posfijo Iteracion_1. Igualmente las figuras de Varianza Intracluster e Indices de Silloutte se pueden encontrar en el folder  docs/figures 
 
+### Iteracion 2: 
 
 ## Clonar repositorio
 Usando git o otra herramienta de control de versiones, clonar este repositorio desde esta URL:
