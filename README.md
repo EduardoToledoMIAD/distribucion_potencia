@@ -31,7 +31,7 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 │   └── notebooks  <- notebooks de jupyter  
 │
 
-## Selección de circuitos
+## Metodologia
 
 ### Iteración 0:
 Una preliminar análisis exploratorio de datos puede ser encontrado [aquí.](https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/Iteracion_0/1_0_exploracion_inicial_datos_Iteracion_0.ipynb) . Este analisis preliminar fue corrido con el dataset original, encontrado [aquí.](data/raw/dataset_pfinal_ANS.xls)
@@ -64,9 +64,9 @@ Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muc
 - Para obtener las variables mas relevantes de cada cluster en el modelo jerarquico se aplica PCA y se obtiene los loadings y los top features. El notebook se encuentra [notebook](https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/Iteration_3/7_0_Clustering_Jerarquico__Iteration_3.ipynb). Los loadings se pueden encontrar [aqui](data/processed/pca_cluster_jerarquico/loadings) y los top features [aqui](data/processed/pca_cluster_jerarquico/topfeatures)
 
 #### Clustering por KMeans
-- Con 12 clusters a partir de clustering jerarquico,  se aplica Clustering por KMeans e igualmente se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento.[ver notebook](). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/pca_cluster_kmeans/circuits_selection)
+- Con 12 clusters a partir de clustering jerarquico,  se aplica Clustering por KMeans e igualmente se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento.[ver notebook](https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/Iteration_3/8_0_KMEANS__Iteration3.ipynb). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/pca_cluster_kmeans/circuits_selection)
 
-- Para obtener las variables mas relevantes de cada cluster en el modelo por kmeans se aplica PCA y se obtiene los loadings y los top features. El notebook se encuentra [notebook](). Los loadings se pueden encontrar [aqui](data/processed/pca_cluster_kmeans/loadings) y los top features [aqui](data/processed/pca_cluster_kmeans/topfeatures)
+- Para obtener las variables mas relevantes de cada cluster en el modelo por kmeans se aplica PCA y se obtiene los loadings y los top features. El notebook se encuentra [notebook](https://github.com/EduardoToledoMIAD/distribucion_potencia/blob/main/src/notebooks/Iteration_3/8_0_KMEANS__Iteration3.ipynb). Los loadings se pueden encontrar [aqui](data/processed/pca_cluster_kmeans/loadings) y los top features [aqui](data/processed/pca_cluster_kmeans/topfeatures)
 
 ## Clonar repositorio
 Usando git o otra herramienta de control de versiones como sourcetree or github desktop, clonar este repositorio desde esta URL:
