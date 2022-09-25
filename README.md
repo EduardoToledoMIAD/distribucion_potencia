@@ -57,7 +57,7 @@ Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muc
 
 - Un nuevo dataset fue suministrado desde el centro de operaciones de la compania , las cuales les fueron eliminados algunas columnas por ser redundantes y con la modificación de tener solamente  la Unidad Territorial V (Metropolitana Noroccidente) que abarca los circuitos de  la localidad de Suba y los municipios de Chía, Cota, Cajicá Tenjo y Tabio y con algunos datos de campo corregidos de nivel de tensión en  algunos circuitos [detalles](data/raw/dataset_pfinal_ANS_V6.xlsx) 
 
-- A partir de este dataset , se aplica Clustering Jerarquico para retener 12 clusters que corresponden a los doce meses dentro del plan de mantenimiento. Aqui se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento. [Ver notebook](src/notebooks/Iteracion_3/7_0_Clustering_Jerarquico__Iteration_3.ipynb). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/PCA Clusters Jerarquico/circuits_selection)
+- A partir de este dataset , se aplica Clustering Jerarquico para retener 12 clusters que corresponden a los doce meses dentro del plan de mantenimiento. Aqui se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento.[ver notebook](src/notebooks/Iteracion_3/7_0_Clustering_Jerarquico__Iteration_3.ipynb). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/pca_cluster_jerarquico/circuits_selection)
 
 
 - A partir 
