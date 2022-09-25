@@ -39,10 +39,11 @@ Una preliminar análisis exploratorio de datos puede ser encontrado [aquí.](src
 - Estadisticas descriptivas pueden ser consultadas [aquí.](reports/figures)
 
 ### Iteración 1: 
-Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muchos circuitos con NaN y la conclusio fue que esos circuitos fueron dados de baja. [Detalles](data/raw/dataset_pfinal_ANS_V2.xlsx) 
+Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muchos circuitos con NaN y la conclusion fue que esos circuitos fueron dados de baja. [detalles](data/raw/dataset_pfinal_ANS_V2.xlsx) 
 
 - Con estas nuevos ajustes del dataset original, se hizo  de nuevo exploración de datos cuyas figuras se encuentra [aquí](/docs/figures/Iteracion_1)
--En esta iteración se corrió PCA con el animo de ver si la reducción de dimensionalidad nos proporciona una reducción significativa. Al 95% de varianza explicada solamente se reduce el 50% de dimensionalidad. Creemos que que esta reduccion no es suficiente y se decide continuar sin PCA. En el repositorio se puede encontrar las figuras resultantes de Varianza explicada, dendrogramas, Varianza Intracluster, Indices de Silhoutte, dbscan kneelocator, dbscan-porcentaje de Outliers [aquí.](/docs/figures/Iteracion_1)
+
+- En esta iteración se corrió PCA con el animo de ver si la reducción de dimensionalidad nos proporciona una reducción significativa. Al 95% de varianza explicada solamente se reduce el 50% de dimensionalidad. Creemos que que esta reduccion no es suficiente y se decide continuar sin PCA. En el repositorio se puede encontrar las figuras resultantes de Varianza explicada, dendrogramas, Varianza Intracluster, Indices de Silhoutte, dbscan kneelocator, dbscan-porcentaje de Outliers [aquí.](/docs/figures/Iteracion_1)
 
 - En esta Iteración se corre Clustering jerárquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se encuetnran [aquí.](src/notebooks/Iteracion_1)
 
@@ -54,9 +55,12 @@ Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muc
 
 ### Iteración 3: 
 
-- Un nuevo dataset fue suministrado desde el centro de operaciones de la compania , las cuales les fueron eliminados algunas columnas por ser redundantes y con la modificación de tener solamente  la Unidad Territorial V (Metropolitana Noroccidente) que abarca los circuitos de  la localidad de Suba y los municipios de Chía, Cota, Cajicá Tenjo y Tabio y con algunos datos de campo corregidos de nivel de tensión en  algunos circuitos [Detalles](data/raw/dataset_pfinal_ANS_V6.xlsx) 
+- Un nuevo dataset fue suministrado desde el centro de operaciones de la compania , las cuales les fueron eliminados algunas columnas por ser redundantes y con la modificación de tener solamente  la Unidad Territorial V (Metropolitana Noroccidente) que abarca los circuitos de  la localidad de Suba y los municipios de Chía, Cota, Cajicá Tenjo y Tabio y con algunos datos de campo corregidos de nivel de tensión en  algunos circuitos [detalles](data/raw/dataset_pfinal_ANS_V6.xlsx) 
+
+- A partir de este dataset , se aplica Clustering Jerarquico para retener 12 clusters que corresponden a los doce meses dentro del plan de mantenimiento. Aqui se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento. [Ver notebook](src/notebooks/Iteracion_3/7_0_Clustering_Jerarquico__Iteration_3.ipynb). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/PCA Clusters Jerarquico/circuits_selection)
 
 
+- A partir 
 
 ## Clonar repositorio
 Usando git o otra herramienta de control de versiones como sourcetree or github desktop, clonar este repositorio desde esta URL:
