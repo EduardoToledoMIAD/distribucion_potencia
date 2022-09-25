@@ -31,19 +31,33 @@ Se entiende por sistema de distribución de energía eléctrica a la disposició
 │   └── notebooks  <- notebooks de jupyter  
 │
 
-## Análisis Exploratorio de Datos
+## Selección de circuitos
+
 ### Iteración 0:
-Una preliminar análisis exploratorio de datos puede ser encontrado [aquí.](src/notebooks/Iteraction_0/1_0_exploracion_inicial_datos_Iteracion_0.ipynb)  
+Una preliminar análisis exploratorio de datos puede ser encontrado [aquí.](src/notebooks/Iteraction_0/1_0_exploracion_inicial_datos_Iteracion_0.ipynb) . Este analisis preliminar fue corrido con el dataset original, encontrado [aquí.] (data/raw/dataset_pfinal_ANS.xls)
+
+- Estadisticas descriptivas pueden ser consultadas [aquí.](reports/figures)
+
 ### Iteración 1: 
-Un nuevo dataset fue suministrado con datos de campo corregidos respecto a las podas [Ver](data/raw/dataset_pfinal_ANS_Iteracion_1.xlsx) 
+Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muchos circuitos con NaN y la conclusio fue que esos circuitos fueron dados de baja. [Detalles](data/raw/dataset_pfinal_ANS_V2.xlsx) 
 
 - Con estas nuevos ajustes del dataset original, se hizo  de nuevo exploración de datos cuyas figuras se encuentra [aquí](/docs/figures/Iteracion_1)
--En esta iteración se corrió PCA con el animo de ver si la reducción de dimensionalidad nos proporciona una reducción significativa. Al 95% de varianza explicada solamente se reduce el 50% de dimensionalidad. Creemos que que esta reduccion no es suficiente y se decide continuar sin PCA. En el repositorio se puede encontrar las figuras resultantes de Varianza explicada [aquí.](/docs/figures/Iteracion_1)
+-En esta iteración se corrió PCA con el animo de ver si la reducción de dimensionalidad nos proporciona una reducción significativa. Al 95% de varianza explicada solamente se reduce el 50% de dimensionalidad. Creemos que que esta reduccion no es suficiente y se decide continuar sin PCA. En el repositorio se puede encontrar las figuras resultantes de Varianza explicada, dendrogramas, Varianza Intracluster, Indices de Silhoutte, dbscan kneelocator, dbscan-porcentaje de Outliers [aquí.](/docs/figures/Iteracion_1)
 
-- En esta Iteración se corre Clustering jerárquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se encunetran [aquí.](src/notebooks/Iteracion_1)
+- En esta Iteración se corre Clustering jerárquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se encuetnran [aquí.](src/notebooks/Iteracion_1)
 
-### Iteracion 2: 
+### Iteración 2: 
+
+- Un nuevo dataset fue suministrado con algunos datos de campo corregidos de nivel de tension en  algunos circuitos [Ver](data/raw/dataset_pfinal_ANS_V4.xlsx) 
+
+-  En esta Iteración se corre Clustering jerárquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se encuentran [aquí.](src/notebooks/Iteracion_2)
+
+### Iteración 3: 
+
+- Un nuevo dataset fue suministrado desde el centro de operaciones de la compania , las cuales les fueron eliminados algunas columnas por ser redundantes y con la modificación de tener solamente  la Unidad Territorial V (Metropolitana Noroccidente) que abarca los circuitos de  la localidad de Suba y los municipios de Chía, Cota, Cajicá Tenjo y Tabio y con algunos datos de campo corregidos de nivel de tensión en  algunos circuitos [Detalles](data/raw/dataset_pfinal_ANS_V6.xlsx) 
+
+
 
 ## Clonar repositorio
-Usando git o otra herramienta de control de versiones, clonar este repositorio desde esta URL:
+Usando git o otra herramienta de control de versiones como sourcetree or github desktop, clonar este repositorio desde esta URL:
 https://github.com/EduardoToledoMIAD/distribucion_potencia.git
