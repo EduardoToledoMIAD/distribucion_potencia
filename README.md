@@ -51,13 +51,13 @@ Un nuevo dataset fue suministrado con datos de campo corregidos por que hubo muc
 
 - Un nuevo dataset fue suministrado con algunos datos de campo corregidos de nivel de tension en  algunos circuitos [Ver](data/raw/dataset_pfinal_ANS_V4.xlsx) 
 
--  En esta Iteración se corre Clustering jerárquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se encuentran [aquí.](src/notebooks/Iteracion_2)
+-  En esta Iteración se corre Clustering jerárquico para obtener una referencia del numero de clusters y volvemos a aplicar KMeans. Los notebooks resultantes se encuentran [aquí.](src/notebooks/Iteration_2)
 
 ### Iteración 3: 
 
 - Un nuevo dataset fue suministrado desde el centro de operaciones de la compania , las cuales les fueron eliminados algunas columnas por ser redundantes y con la modificación de tener solamente  la Unidad Territorial V (Metropolitana Noroccidente) que abarca los circuitos de  la localidad de Suba y los municipios de Chía, Cota, Cajicá Tenjo y Tabio y con algunos datos de campo corregidos de nivel de tensión en  algunos circuitos [detalles](data/raw/dataset_pfinal_ANS_V6.xlsx) 
 
-- A partir de este dataset , se aplica Clustering Jerarquico para retener 12 clusters que corresponden a los doce meses dentro del plan de mantenimiento. Aqui se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento.[ver notebook](src/notebooks/Iteracion_3/7_0_Clustering_Jerarquico__Iteration_3.ipynb). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/pca_cluster_jerarquico/circuits_selection)
+- A partir de este dataset , se aplica Clustering Jerarquico para retener 12 clusters que corresponden a los doce meses dentro del plan de mantenimiento. Aqui se ordenan los clusters por mayor saidi y de cada cluster se toma el 40% de circuitos que  les será aplicado el plan de mantenimiento.[ver notebook](src/notebooks/Iteracion_3/7_0_Clustering_Jerarquico_Iteration_3.ipynb). La seleccion de los circuitos se pueden encontrar [aquí.](data/processed/pca_cluster_jerarquico/circuits_selection)
 
 
 - Para obtener las variables mas relevantes de cada cluster en el modelo jerarquico se aplica PCA y se obtiene los loadings y los top features. El notebook se encuentra [notebook](src/notebooks/Iteracion_3/7_0_Clustering_Jerarquico__Iteration_3.ipynb). Los loadings se pueden encontrar [aqui](data/processed/pca_cluster_jerarquico/loadings) y los top features [aqui](data/processed/pca_cluster_jerarquico/topfeatures)
